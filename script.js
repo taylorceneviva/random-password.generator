@@ -97,3 +97,14 @@ function generatePassword() {
     } else if (passwordLength > 128) {
           alert("Character length must be at least 8 and no more than 128.");
     }
+    // call get length
+
+
+  // check if they want to use uppercase
+  uppercaseC = confirm("Do you want to use uppercase characters?");
+  // check if they want to use lowecase
+  lowercaseC = confirm("Do you want to use lowercase characters?");
+  // check if they want to use special characters
+  specialC = confirm("Do you want to use special characters?");
+  // check if they want to use number 
+  numberC = confirm("Do you want to use numbers?");
