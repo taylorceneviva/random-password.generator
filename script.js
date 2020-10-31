@@ -83,3 +83,17 @@ var lowercase = [
   var specialC;
   // empty string
   var possibleChar = [];
+
+  // begin password function
+function generatePassword() {
+    var currentPassword = "";
+    
+    passwordLength = prompt(
+      "Character length must be at least 8 and no more than 128. Enter character lenth below:"
+    );
+  
+    if (passwordLength < 8) {
+          alert("Character length must be at least 8 and no more than 128.");
+    } else if (passwordLength > 128) {
+          alert("Character length must be at least 8 and no more than 128.");
+    }
