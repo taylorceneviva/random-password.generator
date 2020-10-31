@@ -128,3 +128,13 @@ function generatePassword() {
     // add number to possible characters
     possibleChar = possibleChar.concat(number);
   }
+
+  for (var i = 0; i < passwordLength; i++) {
+    //randomly pick a character on each run of the loop
+    var index = Math.floor(Math.random() * possibleChar.length);
+    var char = possibleChar[index];
+    //adding to the password placeholder
+    currentPassword += char;
+  }
+  return currentPassword;
+}
