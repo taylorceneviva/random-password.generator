@@ -108,3 +108,23 @@ function generatePassword() {
   specialC = confirm("Do you want to use special characters?");
   // check if they want to use number 
   numberC = confirm("Do you want to use numbers?");
+
+  if (uppercaseC) {
+    // add uppercase to possible characters
+    possibleChar = possibleChar.concat(uppercase);
+  }
+
+  if (lowercaseC) {
+    // add lowecase to possible characters
+    possibleChar = possibleChar.concat(lowercase);
+  }
+
+  if (specialC) {
+    // add special to possible characters
+    possibleChar = possibleChar.concat(special);
+  }
+
+  if (numberC) {
+    // add number to possible characters
+    possibleChar = possibleChar.concat(number);
+  }
